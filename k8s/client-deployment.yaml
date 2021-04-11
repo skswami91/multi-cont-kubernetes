@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: client-deployment
@@ -16,6 +16,6 @@ spec:
       containers:
         - name: client
           image: skswami91/multi-client
-          port:
-            containerPort: 3000
+          ports:
+            - containerPort: 3000
 
